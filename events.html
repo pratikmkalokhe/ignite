@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <span>IE</span>
+                </div>
+                <span class="logo-text">Ignite Educon</span>
+            </div>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#programs">Our Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="counselling.html">Counselling</a></li>
+            </ul>
+        </nav>
+        <div class="menu-overlay"></div>
+    </header>
+<main class="events-page-content">
+    <section class="page-banner">
+        <h1 class="page-title">Webinar / Events</h1>
+    </section>
+
+    <div class="event-tabs">
+        <button class="tab-button active" onclick="filterEvents('upcoming')">Upcoming</button>
+        <button class="tab-button" onclick="filterEvents('completed')">Completed</button>
+        <div class="filter-dropdown">
+            <select aria-label="Filter events by week">
+                <option value="this-week">This Week</option>
+                <option value="next-week">Next Week</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="event-list-container">
+        
+        <div id="upcoming" class="event-tab-content no-data active">
+            <div class="event-card-list">
+                <div class="event-card-placeholder" style="padding: 15px; border: 1px dashed #ccc;">
+                    This card is a temporary placeholder. Add your actual upcoming event cards here.
+                </div>
+            </div>
+
+            <div class="no-data-message">
+                <img src="images/no-data-illustration.png" alt="No data available" class="no-data-img">
+                <h2>No Data</h2>
+                <p>No webinars right now. We're working on bringing you valuable sessions soon</p>
+            </div>
+
+        </div>
+
+        <div id="completed" class="event-tab-content" style="display: none;">
+
+            <div class="event-card-list">
+
+                <div class="event-card completed-card">
+                    <div class="event-image-section">
+                        <img src="images/akravichya-ubarathyawar.png" alt="अकरावीच्या उंबरठ्यावर Seminar Poster">
+                    </div>
+                    <div class="event-details-section">
+                        <div class="event-meta-row">
+                            <span class="event-meta-item"><i class="far fa-calendar-alt"></i> दि. २४ मार्च २०२४</span>
+                            <span class="event-meta-item"><i class="far fa-clock"></i> सकाळ ११ वाजता</span>
+                            <span class="event-meta-item"><i class="fas fa-map-marker-alt"></i> पुणे</span>
+                        </div>
+                        <p class="event-description">
+                            <strong style="font-size: 1.1em;">"अकरावीच्या उंबरठ्यावर"</strong>
+                            <br>
+                            समुपदेशन क्षेत्रात अग्रगण्य असलेले नाव डॉ. शांतनु देशपांडे यांचे अत्यंत उपयुक्त चर्चासत्र. (१०वीतील विद्यार्थी आणि त्यांच्या पालकांसाठी).
+                        </p>
+                        <span class="event-tag-label" style="background-color: #f0f0f0; color: #333; margin-top: 5px;">स्थळ: सिद्धार्थ हॉल, सिंहगड रोड, पुणे.</span>
+                    </div>
+                    <div class="event-status-section">
+                        <span class="event-status">This session is completed</span>
+                    </div>
+                </div>
+                </div>
+
+            <div class="no-data-message">
+                <img src="images/no-data-illustration.png" alt="No data available" class="no-data-img">
+                <h2>No Data</h2>
+                <p>No completed events to show right now.</p>
+            </div>
+
+        </div>
+        </div>
+</main>
+
+
+<!-- Footer Section -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> 9766626031/ 32 / 38</p>
+                <p><i class="fas fa-envelope"></i> csryts@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#programs">Our Services</a><li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="counselling.html">Counselling</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="website-link">
+                    <i class="fas fa-globe"></i>
+                    <a href="http://www.ytsedufoundation.com" target="_blank">ytsedufoundation.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Ignite Educon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

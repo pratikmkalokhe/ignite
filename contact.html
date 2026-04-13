@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ignite Educon - Contact Us</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- External CSS (navbar & footer) -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #F0F8FF;;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; }
+
+    /* CONTACT SECTION */
+    .contact-section {
+      padding: 100px 8%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+    .contact-left, .contact-right {
+      flex: 1 1 45%;
+      min-width: 300px;
+    }
+    .contact-badge {
+      background-color: #FFAC1C;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .contact-left h2 {
+      margin-top: 15px;
+      font-weight: 700;
+      font-size: 28px;
+    }
+    .contact-left p {
+      color: #666;
+      margin: 10px 0 25px;
+    }
+    .contact-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #fff;
+    }
+    .contact-icon {
+      font-size: 22px;
+      color: #CC5500;
+    }
+    .contact-card h6 {
+      margin: 0 0 5px;
+      font-weight: 600;
+    }
+    .contact-card p {
+      margin: 0;
+      color: #555;
+    }
+
+    /* CONTACT FORM */
+    .contact-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .contact-form h4 {
+      color: #011F5B;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 15px;
+    }
+    .form-group textarea {
+      resize: none;
+    }
+    .btn-submit {
+      background: #011F5B;
+      color: #fff;
+      border: none;
+      width: 100%;
+      padding: 12px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn-submit:hover {
+      background: #0056b3;
+    }
+
+    /* GOOGLE MAP */
+    .map-container {
+      width: 84%;
+      margin: 60px auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        padding: 50px 4%;
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR (external CSS) -->
+  <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <span>IE</span>
+                </div>
+                <span class="logo-text">Ignite Educon</span>
+            </div>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#programs">Our Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="counselling.html">Counselling</a></li>
+            </ul>
+        </nav>
+        <div class="menu-overlay"></div>
+    </header>
+  
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-left">
+      <span class="contact-badge">Contact Information</span>
+      <h2>Get in Touch with Us Today!</h2>
+      <p>Discover tools and expert guidance tailored to your future. Reach out and let Ignite Educon make your journey simple and successful.</p>
+
+      <div class="contact-card">
+        <i class="fas fa-phone contact-icon"></i>
+        <div>
+          <h6>Phone Number</h6>
+          <p>9766626031</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <i class="fas fa-envelope contact-icon"></i>
+        <div>
+          <h6>Email</h6>
+          <p>csryts@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <i class="fas fa-map-marker-alt contact-icon"></i>
+        <div>
+          <h6>Our Office Address</h6>
+          <p>Survey No. 6, Ashish Apartments, 3rd floor, Lane before Shri Dashbhuja Ganapati, near Dashbhuja Digital X Ray clinic, off Karve Road, Pune, Maharashtra 411004</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <div class="contact-form">
+        <h4>Send Us a Message</h4>
+        <form id="contactForm">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Enter subject" required>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="4" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE MAP -->
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15218.123456789!2d73.8263211!3d18.5054289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf8dca67c69d%3A0xb312f14344ba6592!2sIgnite%20Educon!5e0!3m2!1sen!2sin!4v1693822400000!5m2!1sen!2sin"
+      style="width:100%; height:450px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!-- FOOTER (external CSS) -->
+  <footer id="contact" class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-phone"></i> 9766626031/ 32 / 38</p>
+        <p><i class="fas fa-envelope"></i> csryts@gmail.com</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#programs">Our Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="counselling.html">Counselling</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="website-link">
+          <i class="fas fa-globe"></i>
+          <a href="https://www.ytsedufoundation.com" target="_blank" rel="noopener noreferrer">ytsedufoundation.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2025 Ignite Educon. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- JS -->
+  <script>
+   
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyLL7PM6xnGU2eMcx7DYENqgn46mObh55C-UDaPDl5XhKTq8NYxwVdUjm7pKv7J72hf/exec";
+    document.getElementById("contactForm").addEventListener("submit", e => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+
+      fetch(scriptURL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      })
+      .then(() => {
+        alert("Form submitted successfully!");
+        e.target.reset();
+      })
+      .catch(err => alert("Error: " + err.message));
+    });
+  </script>
+<script src="script.js"></script>
+</body>
+</html>
